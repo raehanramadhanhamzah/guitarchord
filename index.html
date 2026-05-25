@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>GuitarChord. - Belajar Gitar dengan Markerless AR</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="logo_app_asli.jpg">
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts for typography -->
@@ -406,11 +408,17 @@
                                         alt="Detail Akord" draggable="false"
                                         class="w-full h-full object-cover snap-center flex-shrink-0 select-none"
                                         id="slide-2">
-                                    <img src="step-4.jpeg"
+                                    <img src="step-4-new.jpeg"
                                         onerror="this.src='https://placehold.co/720x1560/ea580c/white?text=Tampilan+AR'"
                                         alt="Tampilan AR" draggable="false"
                                         class="w-full h-full object-cover snap-center flex-shrink-0 select-none"
                                         id="slide-3">
+                                    <!-- Gambar kelima untuk fitur Interaksi AR -->
+                                    <img src="step-5-new.jpeg"
+                                        onerror="this.src='https://placehold.co/720x1560/8b5cf6/white?text=Interaksi+AR'"
+                                        alt="Interaksi AR" draggable="false"
+                                        class="w-full h-full object-cover snap-center flex-shrink-0 select-none"
+                                        id="slide-4">
                                 </div>
 
                                 <div
@@ -424,6 +432,10 @@
                                     <div
                                         class="indicator w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-white/50 transition-all shadow-[0_0_4px_rgba(0,0,0,0.5)]">
                                     </div>
+                                    <div
+                                        class="indicator w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-white/50 transition-all shadow-[0_0_4px_rgba(0,0,0,0.5)]">
+                                    </div>
+                                    <!-- Indikator kelima -->
                                     <div
                                         class="indicator w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-white/50 transition-all shadow-[0_0_4px_rgba(0,0,0,0.5)]">
                                     </div>
@@ -442,7 +454,7 @@
                 </div>
 
                 <!-- Feature Descriptions -->
-                <div class="space-y-4 md:space-y-8 order-2 lg:order-1 w-full">
+                <div class="space-y-4 md:space-y-6 order-2 lg:order-1 w-full">
                     <div class="feature-item flex gap-3 md:gap-6 cursor-pointer p-3 md:p-4 rounded-2xl hover:bg-slate-800/50 transition-colors border border-orange-500 bg-slate-800/80"
                         onclick="scrollToSlide(0)" onmouseover="if(window.innerWidth >= 1024) scrollToSlide(0)">
                         <div
@@ -493,6 +505,20 @@
                             <p class="text-xs md:text-base text-slate-400">Tidak perlu mencetak penanda/marker! Tampilkan langsung posisi jari dan model 3D interaktif yang dapat diputar bebas melalui teknologi <strong>Markerless AR</strong> di sekitar Anda.</p>
                         </div>
                     </div>
+
+                    <!-- Fitur Kelima Ditambahkan di Sini -->
+                    <div class="feature-item flex gap-3 md:gap-6 cursor-pointer p-3 md:p-4 rounded-2xl hover:bg-slate-800/50 transition-colors border border-transparent"
+                        onclick="scrollToSlide(4)" onmouseover="if(window.innerWidth >= 1024) scrollToSlide(4)">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 md:w-14 md:h-14 rounded-full bg-purple-900/50 border border-purple-500/30 flex items-center justify-center text-purple-400 text-sm md:text-xl shadow-lg mt-1 md:mt-0">
+                            <i class="fa-solid fa-hand-pointer"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-base md:text-xl font-bold text-white mb-1">Interaksi AR Lengkap</h3>
+                            <p class="text-xs md:text-base text-slate-400">Pelajari akord gitar melalui visualisasi AR 3D, animasi posisi jari, audio akord, highlight senar, serta interaksi drag, rotate, dan scan lantai secara langsung.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
